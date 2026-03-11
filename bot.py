@@ -13,7 +13,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = int(os.getenv("GUILD_ID"))
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 GOLD_API_KEY = os.getenv("GOLD_API_KEY")
-UPDATE_INTERVAL = 1800  # 30 minutes
+UPDATE_INTERVAL = 9000  # 30 minutes
 
 # =========================
 # CLIENT SETUP
