@@ -9,10 +9,10 @@ from discord import app_commands
 # ENVIRONMENT VARIABLES
 # =========================
 
-TOKEN = os.getenv("Discord_Token")
-GUILD_ID = int(os.getenv("708690870131753002"))
-CHANNEL_ID = int(os.getenv("1481319356175618159"))
-GOLD_API_KEY = os.getenv("goldapi-13t4smmm80pdd-io")
+TOKEN = os.getenv("DISCORD_TOKEN")
+GUILD_ID = int(os.getenv("GUILD_ID"))
+CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
+GOLD_API_KEY = os.getenv("GOLD_API_KEY")
 UPDATE_INTERVAL = 1800  # 30 minutes
 
 # =========================
