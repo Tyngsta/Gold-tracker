@@ -13,7 +13,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = int(os.getenv("GUILD_ID"))
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 GOLD_API_KEY = os.getenv("GOLD_API_KEY")
-UPDATE_INTERVAL = 9000  # 30 minutes
+UPDATE_INTERVAL = 180000  # 5 hours
 
 # =========================
 # CLIENT SETUP
@@ -77,7 +77,7 @@ def create_gold_embed():
 
     embed = discord.Embed(title="🪙 Gold Market Update", color=0xFFD700)
     embed.add_field(name="Prices", value=f"```{table}```", inline=False)
-    embed.set_footer(text=f"Data fetched on {date_str} | Updates every 30 minutes")
+    embed.set_footer(text=f"Data fetched on {date_str} | Updates every 5 hours")
 
     return embed
 
